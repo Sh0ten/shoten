@@ -85,6 +85,16 @@
 	height: 100px;
 	background-color: #000;
 	top: 0;
+	padding-top: 10px;
+}
+
+.nav-cap h2 {
+	text-align: center;
+}
+
+.nav-cap h2 a {
+	text-decoration: none;
+	color: #fff;
 }
 
 .nav-cap div {
@@ -117,6 +127,10 @@
 	border-radius: 5px;
 }
 
-.imagens img {
+.img-pag img {
 	width: 100%;
+}
+
+.img-manhwa img {
+	margin-bottom: -5px;
 }
