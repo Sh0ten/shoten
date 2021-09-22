@@ -15,10 +15,10 @@
 }
 
 .img-capa img {
-  height: 200px;
-  width: auto;
-  margin: auto;
-  border: 8px solid #083b48;
+	height: 200px;
+	width: auto;
+	margin: auto;
+	border: 8px solid #083b48;
 }
 
 /** tabela de descricao **/
@@ -47,31 +47,53 @@
 }
 
 /** tabela de capitulos **/
-.table-cap {
+.list-cap {
+	width: 97%;
+	height: auto;
+	margin-left: 1.5%;
+	margin-top: 10px;
+	border-top: 3px solid #2a5ead;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #000;
+}
+
+.list-cap hgroup {
+	height: auto;
+	color: #fff;
+	text-align: center;
+	border-bottom: 2px solid #2a5ead;
+}
+
+.list-cap table {
 	width: 100%;
 	height: auto;
+	color: #fff;
+	font-size: 17px;
+	padding: 5px;
+	margin-bottom: 10px;
+	border-spacing: 20px;
 }
 
-.table-cap table {
-	width: 100%;
-	margin-top: 30px;
-	border: 1px solid white;
-	border-spacing: 0;
-	background-color: gray;
+.list-cap td {
+	max-width: 50px;
 }
 
-.table-cap th {
-	border-bottom: 1px solid white;
+.list-cap table a {
+	text-decoration: none;
+	color: #fff;
 }
 
-.table-cap tr td {
-	border-bottom: 1px solid white;
-	padding: 10px;
+.list-cap .baixar {
+	text-align: center;
+	border-radius: 5px;
+	background-color: #505051;
 }
 
-.table-cap td a {
-	text-decoration: underline;
-	color: #000;
+.list-cap .data {
+	text-align: right;
 }
 
 /* capitulos */
@@ -107,6 +129,7 @@
 	justify-content: center;
 }
 
+/*
 .nav-cap input {
 	width: 40px;
 	height: 25px;
@@ -114,6 +137,19 @@
 	color: #fff;
 	border: 2px solid #505074;
 	border-radius: 5px;
+}
+*/
+
+.button {
+	width: 15px;
+	text-align: center;
+  font: bold 0.9em Arial;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 2px 6px 2px 6px;
+  border: 2px solid #505074;
+  border-radius: 5px;
 }
 
 .nav-cap select {

@@ -74,7 +74,7 @@ header {
 	.menu {
 		width: 50%;
 	}
-	
+
 	.menu ul li {
 		font-size: 0.9em;
 	}
@@ -93,6 +93,74 @@ section {
 	height: auto;
 }
 
+/* modal abreviacoes */
+.jModal {
+	position: fixed;
+	font-family: Arial;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 99999;
+	background-color: #505074;
+	display: none;
+}
+
+.jModal div {
+	width: 500px;
+	height: auto;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	border-top: 3px solid #2a5ead;
+	background-color: #000;
+}
+
+.jModal div iframe {
+	position: relative;
+	border: 0;
+	top: 10%;
+	bottom: 10%;
+	left: 25%;
+}
+
+@media(max-width: 768px) {
+	
+	.jModal div {
+		width: 70%;
+	}
+	
+	.jModal div iframe {
+		width: auto;
+		left: 0;
+	}
+}
+
+.jModal:target {
+	display: block;
+}
+
+.close {
+	background-color: #606061;
+	color: #fff;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+
+/* fim modal abreviacoes */
+
 .quadro .cap-novos {
 	width: 80%;
 	height: 200px;
@@ -106,6 +174,14 @@ section {
 
 .quadro .cap-novos hgroup {
 	text-align: center;
+}
+
+.cap-novos table {
+	border-spacing: 10px;
+}
+
+.cap-novos table td a {
+	color: black;
 }
 
 /** conteúdos **/
@@ -141,38 +217,3 @@ section {
 }
 
 /* footer */
-footer {
-	position: relative;
-	width: 100%;
-	height: auto;
-	margin-top: 7%;
-}
-
-#title-chat {
-	text-align: center;
-}
-
-/*** manga.html ***/
-.letras {
-	position: relative;
-	width: auto;
-	height: auto;
-	color: #fff;
-	background-color: #000;
-	top: -10px;
-	border-top: 1px solid gray;
-}
-
-.letras ul {
-	width: 100%;
-	display: flex;
-	flex-wrap: nowrap;
-	overflow-x: scroll;
-}
-
-.letras ul li {
-	list-style: none;
-	float: left;
-	margin-left: 10px;
-	font-size: 1.5em;
-}

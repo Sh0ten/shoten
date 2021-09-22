@@ -1,18 +1,17 @@
-/* botao voltar */
-function primeiroCap() {
+function first() {
 	alert('Este é o primeiro capítulo!');
 }
 
+const select = document.querySelector('#selCap');
+
+select.addEventListener('change', selectLink);
 /* funcao do select */
-function link(URL) {
-	let link = URL;
-	
-	if (link != '#') {
-		document.location = link;
-	}
+function selectLink() {
+	let valSelect = select.options[select.selectedIndex].value;
+
+	document.location = valSelect;
 }
 
-/* botao avancar */
-function ultimoCap() {
-	alert('Você chegou no último capítulo!');
+function last() {
+	alert('Este é o último capítulo!');
 }

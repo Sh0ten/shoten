@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="css/estilo.css" />
 	<!--[if IE]><link rel="icon" href="imagens/favicon.ico" /><![endif]-->
 	<link rel="icon" href="imagens/favicon.ico" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="container-geral">
@@ -27,12 +29,34 @@
 
 		<section>
 			<div class="quadro">
+
+				<div id="modal" class="jModal">
+					<div>
+						<a href="#" class="close">X</a>
+						<iframe src="abrev.html"></iframe>
+					</div>
+				</div>
+
 				<div class="cap-novos">
 					<hgroup>
 						<h2>Últimos Capítulos</h2>
 					</hgroup>
-					<hr/>
-					
+					<hr />
+
+					<table>
+						<tr>
+							<td><a href="#modal">LD</a></td>
+							<td><a href="manhwa/lucid-dream/capitulo-7.html">Capítulo 7</a></td>
+						</tr>
+						<tr>
+							<td><a href="#modal">LD</a></td>
+							<td><a href="manhwa/lucid-dream/capitulo-6.html">Capítulo 6</a></td>
+						</tr>
+						<tr>
+							<td><a href="#modal">LD</a></td>
+							<td><a href="manhwa/lucid-dream/capitulo-5.html">Capítulo 5</a></td>
+						</tr>
+					</table>
 				</div>
 
 				<div class="ativos">
@@ -40,10 +64,10 @@
 						<h1>Ativos</h1>
 					</hgroup>
 					<ul>
-						<li><a href="manhwa/Lucid-dream.html"><img src="imagens/capa-Lucid-Dream-193x278.jpg" alt="mangá Lucid Dream" /></a></li>
+						<li><a href="manhwa/lucid-dream.html"><img src="imagens/capa-Lucid-Dream-193x278.jpg" alt="mangá Lucid Dream" /></a></li>
 					</ul>
 				</div>
-				
+
 				<div class="final">
 					<hgroup>
 						<h1>Finalizados</h1>
@@ -52,7 +76,7 @@
 						<li>Nada por enquanto :(</li>
 					</ul>
 				</div>
-				
+
 				<div class="pausa">
 					<hgroup>
 						<h1>Pausados</h1>
@@ -62,16 +86,29 @@
 					</ul>
 				</div>
 			</div>
+
+			<!-- comentarios -->
+			<div id="disqus_thread"></div>
+			<script>
+				/**
+				*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+				*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+				/*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+				(function() {
+					// DON'T EDIT BELOW THIS LINE
+					var d = document, s = d.createElement('script');
+					s.src = 'https://mangashoten.disqus.com/embed.js';
+					s.setAttribute('data-timestamp', +new Date());
+					(d.head || d.body).appendChild(s);
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 		</section>
-		
-		<footer>
-			<hr/>
-			<h2 id="title-chat">Comentários</h2>
-			<hr/>
-			<br/>
-			
-			<iframe id="chat" src="https://minnit.chat/Principal?embed&&nickname=" style="border:none;width:100%;height:300px;" allowTransparency="true"></iframe>
-		</footer>
 	</div>
 </body>
 </html>
